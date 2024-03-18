@@ -9,3 +9,14 @@ navlinks.forEach((item) => {
     item.classList.add("active");
   });
 });
+
+$(`document`).ready(() => {
+  // clients
+  $(".db-story .owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    dots: true,
+    items: 1,
+  });
+});

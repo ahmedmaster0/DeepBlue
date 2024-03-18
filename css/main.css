@@ -101,7 +101,7 @@ a {
 
 /* start second-section -------- */
 .second-section {
-  background-image: url(../images/bg-second-section.png);
+  background-color: #020112;
   height: 350px;
   width: 100%;
   background-repeat: no-repeat;
@@ -125,9 +125,12 @@ a {
 }
 /* end second-section -------- */
 
+.bg-specialists-story {
+  background: linear-gradient(179.6deg, #020112 29.35%, #0aa0d0 174.44%);
+}
+
 /* start specialists ----- */
 .specialists {
-  background: linear-gradient(229.19deg, #020112 39.65%, #0aa0d0 104%);
   height: 600px;
   display: flex;
   align-items: center;
@@ -151,7 +154,7 @@ a {
   height: 55px;
   left: -14px;
   top: -2px;
-  background-color: #0d3e4f;
+  background-color: var(--main-color);
   border-radius: 50%;
   z-index: -1;
   -webkit-border-radius: 50%;
@@ -180,7 +183,6 @@ a {
 
 /* start story ----- */
 .db-story {
-  background: linear-gradient(179.6deg, #020112 29.35%, #0aa0d0 174.44%);
   display: flex;
   align-items: center;
   position: relative;
@@ -199,19 +201,10 @@ a {
   position: relative;
   z-index: 2;
 }
-.db-story .item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  border: 1.5px solid #ffffff;
-  border-style: dashed;
-  z-index: -1;
-  top: 18%;
-}
 .db-story .box .icon {
   background-color: #0aa0d0;
-  width: 195.11px;
-  height: 195.11px;
+  width: 140px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +226,23 @@ a {
   text-align: center;
   color: #d6d6d6f5;
 }
+.db-story .box img {
+  width: 90px;
+  height: 90px;
+}
+.owl-theme .owl-dots {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 25px;
+  height: 25px;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: var(--main-color);
+}
 @media (max-width: 991px) {
   .db-story .title h2 {
     font-size: 32px;
@@ -241,11 +251,14 @@ a {
     font-size: 16px;
   }
   .db-story .box h4 {
-    font-size: 28px;
+    font-size: 24px;
   }
-  .db-story .item::before {
-    display: none;
+  .db-story .box p {
+    font-size: 16px;
   }
+}
+.owl-carousel {
+  touch-action: manipulation;
 }
 /* end story ----- */
 
@@ -303,7 +316,8 @@ a {
     height: auto;
   }
   .partners .box h3 {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: inherit;
   }
 }
 /* end partners -------- */
