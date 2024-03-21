@@ -99,30 +99,30 @@ a {
 }
 /* end header ------- */
 
-/* start second-section -------- */
-.second-section {
+/* start about -------- */
+.about {
   background-color: #020112;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.second-section .title p {
+.about .title p {
   font-size: 20px;
   font-weight: 600;
 }
-.second-section .title p a {
+.about .title p a {
   color: var(--main-color);
 }
 @media (max-width: 991px) {
-  .second-section {
+  .about {
     height: auto;
   }
-  .second-section .title p {
+  .about .title p {
     font-size: 16px;
   }
 }
-/* end second-section -------- */
+/* end about -------- */
 
 .bg-specialists-story {
   background: linear-gradient(179.6deg, #020112 29.35%, #0aa0d0 174.44%);
@@ -417,6 +417,10 @@ a {
   width: 150px;
   object-fit: contain;
 }
+.our-ventures .img-logo img {
+  width: 90px;
+  height: 120px;
+}
 @media (max-width: 991px) {
   .our-ventures .title h2 {
     font-size: 32px;
@@ -529,3 +533,18 @@ a {
   color: var(--main-color);
 }
 /* end footer ------------- */
+
+.whatsapp-fixed {
+  position: fixed;
+  right: 35px;
+  z-index: 55;
+  bottom: 35px;
+  background-color: #10ab16;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
