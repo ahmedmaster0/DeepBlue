@@ -10,6 +10,16 @@ navlinks.forEach((item) => {
   });
 });
 
+// start scroll-up ------------
+let scroll = document.querySelector(".scroll-up");
+window.addEventListener(`scroll`, () => {
+  if (this.scrollY >= 200) {
+    scroll.classList.add("show-up");
+  } else {
+    scroll.classList.remove("show-up");
+  }
+});
+
 $(`document`).ready(() => {
   // clients
   $(".db-story .owl-carousel").owlCarousel({

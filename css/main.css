@@ -36,7 +36,7 @@ a {
 .header {
   background-color: #020112;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,13 +106,18 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 110vh;
 }
 .about .title p {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
+  line-height: 32.73px;
 }
 .about .title p a {
   color: var(--main-color);
+}
+.about .title img {
+  width: 100%;
 }
 @media (max-width: 991px) {
   .about {
@@ -133,6 +138,7 @@ a {
   height: 600px;
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 .specialists .title h2 {
   font-size: 40px;
@@ -176,6 +182,13 @@ a {
   }
   .specialists .box h3 {
     font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .specialists .box {
+    text-align: center;
+  }
+  .specialists .box h3::before {
+    left: inherit;
   }
 }
 /* end specialists ----- */
@@ -185,6 +198,7 @@ a {
   display: flex;
   align-items: center;
   position: relative;
+  height: 100vh;
 }
 .db-story .title h2 {
   font-size: 70px;
@@ -262,6 +276,9 @@ a {
 /* end story ----- */
 
 /* satrt what-we-do ---- */
+.what-we-do {
+  height: 100vh;
+}
 .what-we-do .desc h2 {
   color: #008f96;
   font-size: 61px;
@@ -284,7 +301,7 @@ a {
 .partners {
   background-color: #020112;
   background-image: url(../images/bg-partners.png);
-  height: 800px;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -435,6 +452,7 @@ a {
   width: 100%;
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 .startup-together .box h3 {
   color: var(--main-color);
@@ -539,12 +557,37 @@ a {
   right: 35px;
   z-index: 55;
   bottom: 35px;
-  background-color: #10ab16;
-  width: 50px;
-  height: 50px;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+
+/* add scroll up ------------- */
+.scroll-up {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -40px;
+  padding: 5px 12px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: #fff;
+  z-index: 66;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.show-up:hover {
+  color: #fff;
+}
+.show-up {
+  left: 35px;
 }
