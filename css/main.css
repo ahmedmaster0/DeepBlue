@@ -53,8 +53,8 @@ a {
 .header .nav-item .list li a:hover {
   color: var(--main-color);
 }
-.header .nav-item .list li a.active {
-  color: var(--main-color);
+.nav-container .active {
+  color: var(--main-color) !important;
   border-bottom: solid 2px var(--main-color);
   font-weight: 600;
   display: inline-block;
