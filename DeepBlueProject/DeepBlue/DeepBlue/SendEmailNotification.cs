@@ -28,10 +28,11 @@ namespace DeepBlue
                 string sender = configuration["EmailSender:SmtpCredential:UserName"].ToString();
                 string password = configuration["EmailSender:SmtpCredential:Password"].ToString();
 
-                var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("", SenderEmail));
-                message.To.Add(new MailboxAddress("", sender));
 
+                var message = new MimeMessage();
+                message.From.Add(new MailboxAddress(SenderEmail, SenderEmail));
+                message.To.Add(new MailboxAddress(sender, sender));
+                message.Subject = "Message From DeepBlue";
                 var bodyBuilder = new BodyBuilder();
 
                 bodyBuilder.HtmlBody = $"{msg}";
@@ -39,7 +40,7 @@ namespace DeepBlue
                 // bodyBuilder.TextBody = "This is some plain text";
 
                 message.Body = bodyBuilder.ToMessageBody();
-               // message.Body = new TextPart("plain") { Text = msg };
+                // message.Body = new TextPart("plain") { Text = msg };
 
 
                 using (var client = new SmtpClient())
