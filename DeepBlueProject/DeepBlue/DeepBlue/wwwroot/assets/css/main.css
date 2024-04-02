@@ -36,7 +36,6 @@ a {
 .header {
   background-color: #020112;
   width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +62,7 @@ a {
   padding: 0 20px 0 0;
 }
 .header .title h2 {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 700;
   color: var(--white-color);
 }
@@ -72,9 +71,9 @@ a {
 }
 .header .title p {
   color: var(--white-color);
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.4;
 }
 .header .title .contact-us {
   background-color: var(--main-color);
@@ -206,8 +205,8 @@ a {
   text-align: center;
 }
 .db-story .title p {
-  font-size: 53px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 600;
   color: #00b9c2f5;
 }
 .db-story .box {
@@ -276,9 +275,6 @@ a {
 /* end story ----- */
 
 /* satrt what-we-do ---- */
-.what-we-do {
-  height: 100vh;
-}
 .what-we-do .desc h2 {
   color: #008f96;
   font-size: 61px;
@@ -432,6 +428,9 @@ a {
 }
 .our-ventures .box img {
   width: 150px;
+  height: 150px;
+   display: block;
+   margin: auto;
   object-fit: contain;
 }
 .our-ventures .img-logo img {
@@ -442,6 +441,10 @@ a {
   .our-ventures .title h2 {
     font-size: 32px;
   }
+    .our-ventures .img-logo img{
+        width: 65px;
+        height: 65px;
+    }
 }
 /* end our-ventures ----- */
 
@@ -452,7 +455,6 @@ a {
   width: 100%;
   background-position: center;
   background-size: cover;
-  height: 100vh;
 }
 .startup-together .box h3 {
   color: var(--main-color);
