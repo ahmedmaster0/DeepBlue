@@ -473,7 +473,6 @@ a {
   width: 100%;
   background-position: center;
   background-size: cover;
-  height: 100vh;
 }
 .startup-together .box h3 {
   color: var(--main-color);
