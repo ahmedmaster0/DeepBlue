@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\DeepBlue\DeepBlueProject\DeepBlue\PublishMe</_PublishTargetUrl>
-    <History>True|2024-04-02T21:59:13.9735637Z;True|2024-04-01T22:36:05.2931729+03:00;True|2024-03-29T20:59:06.9526165+03:00;</History>
+    <History>True|2024-04-08T19:55:22.3242870Z;True|2024-04-02T23:59:13.9735637+02:00;True|2024-04-01T21:36:05.2931729+02:00;True|2024-03-29T19:59:06.9526165+02:00;</History>
   </PropertyGroup>
 </Project>
